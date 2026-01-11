@@ -87,25 +87,10 @@ export default class Resources extends EventEmitter
 
             else if(source.type === 'basisTexture')
             {
-                this.loaders.basisTextureLoader.load(
-                    source.path,
-                    (file) =>
-                    {
-                        file.encoding = THREE.sRGBEncoding
-                        this.sourceLoaded(source, file)
-
-                        if(source.path.includes("smallScreen1"))
-                        {this.carousel1.push(file)}
-
-                        if(source.path.includes("smallScreen2"))
-                        {this.carousel2.push(file)}
-                    },
-                    undefined,
-                    (error) => {
-                        console.warn('Failed to load basis texture:', source.path, error)
-                        this.sourceLoaded(source, null)
-                    }
-                )
+                // Skip .basis files - they're not compatible with KTX2Loader
+                // Just mark as loaded with null texture
+                console.warn('Skipping basis texture (not supported):', source.path)
+                this.sourceLoaded(source, null)
             }
 
             else if(source.type === 'KTX2Texture')
