@@ -13,10 +13,10 @@
     "howler": "^2.2.4",
     "ktx-parse": "^1.1.0",
     "lil-gui": "^0.19.2",
-    "postprocessing": "^6.26.3",
+    "postprocessing": "6.32.2",
     "sharp": "^0.34.5",
     "stats.js": "^0.17.0",
-    "three": "^0.139.0"
+    "three": "0.157.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
