@@ -2,7 +2,6 @@ import * as THREE from 'three'
 import Experience from '../Experience.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { BasisTextureLoader } from 'three/examples/jsm/loaders/BasisTextureLoader.js'
 import { KTX2Loader } from 'three/examples/jsm/loaders/KTX2Loader.js'
 import EventEmitter from './EventEmitter.js'
 
@@ -41,13 +40,12 @@ export default class Resources extends EventEmitter
         this.loaders.textureLoader = new THREE.TextureLoader()
         this.loaders.cubeTextureLoader = new THREE.CubeTextureLoader()
 
-        this.loaders.basisTextureLoader = new BasisTextureLoader()
-        this.loaders.basisTextureLoader.setTranscoderPath('/basis/')
-        this.loaders.basisTextureLoader.detectSupport( this.renderer )
-
         this.loaders.KTX2TextureLoader = new KTX2Loader()
         this.loaders.KTX2TextureLoader.setTranscoderPath('/basis/')
         this.loaders.KTX2TextureLoader.detectSupport( this.renderer )
+
+        // Use KTX2Loader for basis textures too (BasisTextureLoader removed in Three.js 0.157+)
+        this.loaders.basisTextureLoader = this.loaders.KTX2TextureLoader
 
     }
 
