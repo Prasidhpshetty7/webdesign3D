@@ -101,44 +101,44 @@ export default [
     // About Me Screens
     {
         name: 'bigScreenDefaultTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenDefault.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/ChatGPT Image Jan 11, 2026, 01_24_46 PM_rotated.png'
     },
 
     {
         name: 'bigScreenAboutMeTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenAbout.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/ChatGPT Image Jan 11, 2026, 01_24_46 PM_rotated.png'
     },
 
     {
         name: 'bigScreenSkillsTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenSkills.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/42c5cbd7-af2c-4cd3-bea8-6b1fcd39469c_rotated.png'
     },
 
     {
         name: 'bigScreenExperienceTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenExperience.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/8269c086-479b-4c56-9a85-db1fa0c5a08c_rotated.png'
     },
 
     {
         name: 'bigScreenAboutMeMobileTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenAboutMobile.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/ChatGPT Image Jan 11, 2026, 01_24_46 PM_rotated.png'
     },
 
     {
         name: 'bigScreenSkillsMobileTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenSkillsMobile.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/42c5cbd7-af2c-4cd3-bea8-6b1fcd39469c_rotated.png'
     },
 
     {
         name: 'bigScreenExperienceMobileTexture',
-        type: 'KTX2Texture',
-        path: 'textures/screens/aboutMeScreens/bigScreenExperienceMobile.ktx2'
+        type: 'texture',
+        path: 'textures/screens/aboutMeScreens/8269c086-479b-4c56-9a85-db1fa0c5a08c_rotated.png'
     },
 
     // Projects

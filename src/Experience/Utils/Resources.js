@@ -76,6 +76,12 @@ export default class Resources extends EventEmitter
                     {
                         file.flipY = false
                         file.encoding = THREE.sRGBEncoding
+                        
+                        // Offset for custom about me screens - center vertically
+                        if(source.path.includes('aboutMeScreens') && source.path.includes('.png')) {
+                            file.offset.set(0, -0.5)
+                        }
+                        
                         this.sourceLoaded(source, file)
                     }
                 )

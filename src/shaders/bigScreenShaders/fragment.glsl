@@ -33,8 +33,8 @@ void main()
     vec4 textureColor = texture2D(uDefaultTexture, vUv);
     vec3 bigScreenDefault = mix(mixedColor,textureColor.xyz, textureColor.a);
 
-    vec4 t1 = texture2D(uTexture1,vUv);
-    vec4 t2 = texture2D(uTexture2,vUv);
+    vec4 t1 = texture2D(uTexture1, vec2(vUv.x * 1.6 - 0.45, vUv.y * 1.6));
+    vec4 t2 = texture2D(uTexture2, vec2(vUv.x * 1.6 - 0.45, vUv.y * 1.6));
 
     // gl_FragColor = vec4(bigScreenDefault, 1.0);
     

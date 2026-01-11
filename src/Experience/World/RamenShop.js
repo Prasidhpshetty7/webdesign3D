@@ -38,6 +38,13 @@ export default class RamenShop
         this.misc = this.model.children.find(child => child.name === 'miscJoined')
         this.graphics = this.model.children.find(child => child.name === 'graphicsJoined') 
         this.jesseZhouJoined = this.model.children.find(child => child.name === 'jesseZhouJoined')
+        // Remove Jesse Zhou text from model completely
+        if(this.jesseZhouJoined) {
+            this.model.remove(this.jesseZhouJoined)
+            if(this.jesseZhouJoined.geometry) this.jesseZhouJoined.geometry.dispose()
+            if(this.jesseZhouJoined.material) this.jesseZhouJoined.material.dispose()
+            this.jesseZhouJoined = null
+        }
 
         // Moving Objects
         this.fan1 = this.model.children.find(child => child.name === 'fan1') 
@@ -114,7 +121,7 @@ export default class RamenShop
             this.floor.material = this.materials.floorMaterial
             this.misc.material = this.materials.miscMaterial
             this.graphics.material = this.materials.graphicsMaterial
-            this.jesseZhouJoined.material = this.materials.whiteSignMaterial
+            // Jesse Zhou text removed from model
 
             // Moving Objects
             this.fan1.material = this.materials.fanMatcapMaterial

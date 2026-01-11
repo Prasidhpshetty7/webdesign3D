@@ -279,9 +279,10 @@ export default class Reflections
         } );
         this.groundMirror.position.y = -2.8;
         this.groundMirror.material.transparent = true;
-	    this.groundMirror.material.uniforms.opacity.value = 0.04;
+	    this.groundMirror.material.uniforms.opacity.value = 0.0;
         this.groundMirror.rotateX( - Math.PI / 2 );
-        this.scene.add( this.groundMirror );
+        // Disabled floor reflection
+        // this.scene.add( this.groundMirror );
 
         // Debug
 

@@ -348,7 +348,6 @@ export default class RayCaster
                 this.ramenShop.floor,
                 this.ramenShop.misc,
                 this.ramenShop.graphics,
-                this.ramenShop.jesseZhouJoined,
 
                 //hologram
                 this.hologramHitBox,
