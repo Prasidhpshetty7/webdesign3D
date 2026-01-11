@@ -1,14 +1,6 @@
 import Experience from './Experience.js'
 import { Howl, Howler } from 'howler'
 
-import arcade from '../../static/sounds/arcade.mp3'
-import bloop from '../../static/sounds/bloop.mp3'
-import click from '../../static/sounds/click.mp3'
-import ding from '../../static/sounds/ding.mp3'
-import cooking from '../../static/sounds/cooking.mp3'
-import whoosh from '../../static/sounds/whoosh.mp3'
-import hologram from '../../static/sounds/hologram.mp3'
-
 export default class Sounds
 {
     constructor()
@@ -16,38 +8,38 @@ export default class Sounds
         this.experience = new Experience()
 
         this.arcade = new Howl({
-            src: [arcade],
+            src: ['/sounds/arcade.mp3'],
             volume: 0.15
         });
 
         this.bloop = new Howl({
-            src: [bloop],
+            src: ['/sounds/bloop.mp3'],
             volume: 0.3
         });
 
         this.click = new Howl({
-            src: [click],
+            src: ['/sounds/click.mp3'],
             volume: 0.3
         });
 
         this.ding = new Howl({
-            src: [ding],
+            src: ['/sounds/ding.mp3'],
             volume: 0.14
         });
 
         this.cooking = new Howl({
-            src: [cooking],
+            src: ['/sounds/cooking.mp3'],
             loop: true,
             volume: 0.05
         });
         
         this.whoosh = new Howl({
-            src: [whoosh],
+            src: ['/sounds/whoosh.mp3'],
             volume: 0.6
         });
 
         this.hologram = new Howl({
-            src: [hologram],
+            src: ['/sounds/hologram.mp3'],
             volume: 0.2
         });
 
