@@ -99,6 +99,11 @@ export default class Resources extends EventEmitter
 
                         if(source.path.includes("smallScreen2"))
                         {this.carousel2.push(file)}
+                    },
+                    undefined,
+                    (error) => {
+                        console.warn('Failed to load basis texture:', source.path, error)
+                        this.sourceLoaded(source, null)
                     }
                 )
             }
@@ -117,6 +122,11 @@ export default class Resources extends EventEmitter
 
                         // if(source.path.includes("smallScreen2"))
                         // {this.carousel2.push(file)}
+                    },
+                    undefined,
+                    (error) => {
+                        console.warn('Failed to load KTX2 texture:', source.path, error)
+                        this.sourceLoaded(source, null)
                     }
                 )
             }
